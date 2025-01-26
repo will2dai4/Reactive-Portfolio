@@ -2,15 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    :root {
-        --bg-color: #14213D;
-        --bg-color2: #000000;
-        --primary-color: #E5E5E5;
-        --secondary-color: #FCA311;
-    }
+:root {
+    --bg-color: #14213D;
+    --bg-color2: #000000;
+    --primary-color: #E5E5E5;
+    --secondary-color: #FCA311;
+}
 
-    body {
-        @apply bg-background text-primary font-mono tracking-wider min-h-screen m-0 p-0;
+body {
+    @apply bg-[var(--bg-color)] text-[var(--primary-color)] font-mono tracking-wide min-h-screen;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
     }
 }
