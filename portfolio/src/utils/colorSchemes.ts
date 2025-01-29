@@ -12,10 +12,4 @@ export const colorSchemes: Record<string, ColorScheme> = {
         primaryColor: '#E5E5E5',
         secondaryColor: '#FCA311'
     },
-    cottoncandy: {
-        bgColor: '#CDB4DB',
-        bgColor2: '#FFAFCC',
-        primaryColor: '#BDE0FE',
-        secondaryColor: '#A2D2FF'
-    },
 };

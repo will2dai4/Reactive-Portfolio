@@ -5,14 +5,11 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        'bg-color': '#14213D',
-        'bg-color2': '#000000',
-        'primary-color': '#E5E5E5',
-        'secondary-color': '#FCA311',
-      },
       fontFamily: {
         'mono': ['monospace'],
+      },
+      letterSpacing: {
+        'wide': '2px',
       },
     },
   },

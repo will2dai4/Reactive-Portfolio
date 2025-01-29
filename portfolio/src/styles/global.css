@@ -9,18 +9,22 @@
     --secondary-color: #FCA311;
 }
 
-body {
-    @apply bg-[var(--bg-color)] text-[var(--primary-color)] font-mono tracking-wide min-h-screen;
-}
-
-@keyframes typing {
-    from {
-        width: 0
+@layer base {
+    body {
+        @apply bg-[var(--bg-color)] text-[var(--primary-color)] font-mono tracking-wide min-h-screen;
     }
 }
 
-@keyframes cursor {
-    50% {
-        border-color: transparent
+@layer utilities {
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+
+    @keyframes cursor {
+        50% {
+            border-color: transparent
+        }
     }
 }
