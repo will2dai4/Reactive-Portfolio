@@ -9,7 +9,7 @@ interface Command {
 const Terminal: React.FC = () => {
     const [commandHistory, setCommandHistory] = useState<Command[]>([{
         input: '',
-        output: 'Welcome to William Dai\'s portfolio. Type "help" for available commands.'
+        output: 'Welcome to my portfolio! Type "help" for available commands.'
     }]);
     const [currentInput, setCurrentInput] = useState('');
     const navigate = useNavigate();
@@ -77,7 +77,7 @@ help - Show this help message`;
     }, [commandHistory]);
 
     return (
-        <div className="my-8 mx-auto max-w-3xl">
+        <div className="my-8 mx-auto max-w-2xl">
             <div
                 className="bg-[var(--bg-color2)] rounded-lg p-4 font-mono text-[var(--primary-color)]"
                 style={{ minHeight: '300px', maxHeight: '500px' }}
